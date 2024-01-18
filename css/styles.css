@@ -884,11 +884,13 @@ body{
    display: flex;
    width: 100%;
    justify-content: space-between;
+   padding: 24px 16px;
 }
 
 .mobile-menu-layout button{
    background-color: transparent;
    border: none;
+   padding: 0;
 }
 
 .mobile-header-nav .header-list{
