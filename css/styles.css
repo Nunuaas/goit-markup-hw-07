@@ -119,6 +119,7 @@ body{
 /* first section */
 .first-section{
    background-color: var(--dark-color);
+   width: 100%;
    max-width: 1440px;
    padding: 188px 0;
    margin: 0 auto;
@@ -236,6 +237,7 @@ body{
    margin-bottom: 8px;
 }
 
+
 /* footer */
 .footer{
    background-color: var(--dark-color);
@@ -350,6 +352,7 @@ body{
 }
 
 .container{
+   width: 100%;
    max-width: 1158px; 
    padding: 0 15px; 
    margin: 0 auto; 
@@ -380,17 +383,17 @@ body{
 
  .value-list{
    display: flex;
-   padding: 0;
+   padding: 0 1px;
    margin: auto;
    justify-content: space-between;
-   gap: 24px;
+   gap: 72px;
+   flex-wrap: wrap;
  }
 
  .value-list-nav{
    display: flex;
-   width: calc((100% - 72px) / 4);
    flex-direction: column;
-   align-items: flex-start;
+   align-items: center;
    gap: 8px;
  }
 
@@ -409,15 +412,7 @@ body{
 }
 /* HW4 */
 .value-list-icon{ 
-   width: 264px;
-   height: 112px;
-   flex-shrink: 0;
-   border-radius: 4px;
-   background: var(--light-color);
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-bottom: 8px;
+   display: none;
 }
 
 .social-media-icons-list{ 
@@ -974,9 +969,40 @@ body{
    margin-bottom: 0;
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .first-section {
+   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office@2x.jpg);
+  }
+}
+
 /* ================================================= MOBILE ========================================= */
 @media screen and (max-width: 767px) {
- 
+   .first-section{
+      padding: 112px 0;
+   }
+   .first-section-text{ 
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.11em; 
+      letter-spacing: 0.02em;
+      text-transform: capitalize;
+      padding: 0 39px 72px 39px;
+   }
+   .section{
+      padding: 96px 0;
+   }
+   .value-list-nav .names{
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+      color: var(--dark-color);
+      margin-bottom: 8px;
+   }
     
 }
 /* ================================================= TABLET ========================================= */
@@ -988,10 +1014,38 @@ body{
    .mobile-menu-layout{
       display: none;
    }
+
 }
 /* ================================================= DESKTOP ========================================= */
 @media screen and (min-width: 1158px) { 
    .mobile-menu-layout{
       display: none;
    }
+
+   .value-list {
+      display: flex;
+      padding: 0;
+      margin: auto;
+      justify-content: space-between;
+      gap: 24px;
+      flex-direction: row;
+   }
+   .value-list-icon{ 
+      width: 264px;
+      height: 112px;
+      flex-shrink: 0;
+      border-radius: 4px;
+      background: var(--light-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 8px;
+   }
+   .value-list-nav{
+      display: flex;
+      width: calc((100% - 72px) / 4);
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
 }
