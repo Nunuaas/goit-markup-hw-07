@@ -867,3 +867,129 @@ height: 16px;
 .button-footer:focus{
    background-color: var(--pressed-state-color);
 }
+
+html, body{
+   width: 100%;
+}
+
+body{
+   overflow-x: hidden;
+}
+
+.header-flex{
+   display: none;
+}
+
+.mobile-menu-layout{
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+}
+
+.mobile-menu-layout button{
+   background-color: transparent;
+   border: none;
+}
+
+.mobile-header-nav .header-list{
+   display: flex;
+   flex-flow: column nowrap;
+   gap: 40px;
+   margin: 0;
+}
+
+.mobile-header-nav .header-list .highlight::after{
+   display: none;
+}
+
+.mobile-header-nav .header-list-nav{ 
+   font-size: 36px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 1.11em;
+   letter-spacing: 0.02em;   
+}
+
+.js-menu-container{
+   display: none;
+}
+
+.js-menu-container.is-open{
+   display: flex;
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: white;
+   flex-flow: column nowrap;
+   padding: 80px 35px 40px 40px;
+   width: 428px;
+   height: 796px;
+   background: var(--WHITE, #FFF);
+   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+}
+
+.mobile-address{
+      display: flex;
+      font-style: normal;
+      flex-flow: column nowrap;
+      margin-top: 284px;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.2em;
+      letter-spacing: 0.02em;
+}
+
+.mobile-address .address-main{
+   display: flex;
+   padding: 0;
+   flex-flow: column nowrap;
+}
+
+.mobile-address-list{
+   color: var(--primary-brand-color);
+   font-size: 36px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 1.11em; 
+   letter-spacing: 0.02em;
+   text-transform: capitalize;
+}
+
+.mobile-menu-close{
+   display: flex;
+   width: 100%;
+   justify-content: flex-end;
+}
+
+.mobile-social-media-icons-list{    
+   display: flex;
+   flex-direction: row;
+   padding: 0;
+   gap: 56px;
+   justify-content: flex-start;
+   margin-top: 48px;
+   margin-bottom: 0;
+}
+
+/* ================================================= MOBILE ========================================= */
+@media screen and (max-width: 767px) {
+ 
+    
+}
+/* ================================================= TABLET ========================================= */
+@media screen and (min-width: 768px) {
+   .header-flex{
+      display: flex;
+   }
+
+   .mobile-menu-layout{
+      display: none;
+   }
+}
+/* ================================================= DESKTOP ========================================= */
+@media screen and (min-width: 1158px) { 
+   .mobile-menu-layout{
+      display: none;
+   }
+}
