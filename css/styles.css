@@ -179,7 +179,7 @@ body{
    font-style: normal;
    font-weight: 700;
    text-align: center;
-   line-height: 1.11;
+   line-height: 1.11em;
    letter-spacing: 0.02em;
    text-transform: capitalize;
    color: var(--dark-color);
@@ -385,7 +385,7 @@ body{
    padding: 0 1px;
    margin: auto;
    justify-content: space-between;
-   gap: 72px;
+   gap: 24px;
    flex-wrap: wrap;
  }
 
@@ -465,7 +465,7 @@ body{
 
 .customer-list-nav{
    height: 88px;
-   width: calc((100% - 120px) / 6); 
+   flex-basis: calc((100% - 120px) / 6); 
 }
 
 .customer-icons{ 
@@ -993,6 +993,11 @@ body{
    .section{
       padding: 96px 0;
    }
+
+   .value-list{
+      gap: 72px;
+   }
+
    .value-list-nav .names{
       font-size: 36px;
       font-style: normal;
@@ -1010,7 +1015,28 @@ body{
    .team-list{
       justify-content: center;
    }
-    
+   
+   .customer-list{
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+   }
+   .customer-list-nav{
+      flex-basis: calc((100% - 120px) / 2); 
+      margin-bottom: 56px;
+   }
+
+   .customer-list-nav:nth-child(n + 5){
+      margin-bottom: 0;
+   }
+
+   .customer-icons{
+      width: 190px;
+      height: 88px;
+      padding: 16px 40px;
+   }
+      
+   
 }
 /* ================================================= TABLET ========================================= */
 @media screen and (min-width: 768px) {
@@ -1020,6 +1046,15 @@ body{
 
    .mobile-menu-layout{
       display: none;
+   }
+
+   .value-list{
+      flex-wrap: wrap;
+   }
+
+   .value-list-nav{
+      flex-basis: calc((100% - 72px) / 2);
+      align-items: flex-start;
    }
 
 }
@@ -1036,6 +1071,7 @@ body{
       justify-content: space-between;
       gap: 24px;
       flex-direction: row;
+      flex-wrap: nowrap;
    }
    .value-list-icon{ 
       width: 264px;
@@ -1056,6 +1092,6 @@ body{
       gap: 8px;
     }
     .team-members{
-      width: calc((100% - 72px) / 4);
+      flex-basis: calc((100% - 72px) / 4);
     }
 }
