@@ -1104,6 +1104,27 @@ html, body{
       row-gap: 72px;
       justify-content: center;
    }
+   .footer-div{
+      margin: 0 120px 0 0;
+      text-align: start;
+   }
+   .footer-main-div{
+      justify-content: flex-start;
+      padding-left: 108px;
+   }
+   .footer-rubric{
+      text-align: start;
+   }
+   .subscribe-div-footer{
+      margin: 72px 207px 0 0;
+   }
+   .footer-form{
+      gap: 24px;
+   }
+   .input-footer-sub{
+      width: 264px;
+      height: 40px;
+   }
 
 }
 /* ================================================= DESKTOP ========================================= */
@@ -1159,7 +1180,7 @@ html, body{
    .subscribe-div-footer{
       margin: 0 0 0 80px;
    }
-   
+
    .footer-form{
       display: flex;
       align-items: baseline;
