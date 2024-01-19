@@ -1193,6 +1193,7 @@ html, body{
       padding: 0;
       margin: auto;
       flex-wrap: nowrap;
+      justify-content: center;
    }
    .input-footer-sub{ 
       width: 264px;
