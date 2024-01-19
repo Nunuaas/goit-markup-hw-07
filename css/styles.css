@@ -1338,4 +1338,7 @@ html, body{
    .social-media-icons-list {
    gap: 10px;   
    }
+   .first-section-button{
+      padding: 13px 25px;
+   }
 }
