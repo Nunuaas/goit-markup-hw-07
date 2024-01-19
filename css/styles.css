@@ -1132,6 +1132,9 @@ html, body{
    .mobile-menu-layout{
       display: none;
    }
+   .logo{
+      margin-right: 76px;
+   }
 
    .value-list {
       display: flex;
@@ -1212,10 +1215,8 @@ html, body{
       text-align: start;
    }
    .address-main{
-      display: flex;
       gap: 40px;
       padding: 24px 0;
-      margin: 0;
       flex-wrap: nowrap;
       flex-direction: row;
    }
