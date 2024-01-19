@@ -987,6 +987,10 @@ html, body{
 
 /* ================================================= MOBILE ========================================= */
 @media screen and (max-width: 767px) {
+   .container{
+      width: 100%;
+      max-width: 480px; 
+   }
    .first-section{
       padding: 112px 0;
    }
@@ -1046,6 +1050,12 @@ html, body{
 }
 /* ================================================= TABLET ========================================= */
 @media screen and (min-width: 768px) {
+   .container{
+      width: 100%;
+      max-width: 768px; 
+      padding: 0 15px; 
+      margin: 0 auto; 
+   }
    .header-flex{
       display: flex;
       height: 72px;
@@ -1120,6 +1130,7 @@ html, body{
    }
    .footer-form{
       gap: 24px;
+      flex-wrap: nowrap;
    }
    .input-footer-sub{
       width: 264px;
@@ -1129,6 +1140,12 @@ html, body{
 }
 /* ================================================= DESKTOP ========================================= */
 @media screen and (min-width: 1158px) { 
+   .container{
+      width: 100%;
+      max-width: 1158px; 
+      padding: 0 15px; 
+      margin: 0 auto; 
+   }
    .mobile-menu-layout{
       display: none;
    }
