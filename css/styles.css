@@ -1318,6 +1318,10 @@ html, body{
       flex-wrap: nowrap;
       flex-direction: row;
    }
+   .first-section {
+      padding: 188px 0;
+   }
+
    /* portfolio */
    .portfolio-button{   
       margin: 0 0 72px 0;
