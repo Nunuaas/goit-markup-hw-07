@@ -931,7 +931,9 @@ html, body{
    height: 100%;
    background: var(--WHITE, #FFF);
    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+   z-index: 1;
 }
+
 
 .mobile-address{
       display: flex;
@@ -972,9 +974,8 @@ html, body{
    flex-direction: row;
    padding: 0;
    gap: 56px;
-   justify-content: flex-start;
    margin-top: 48px;
-   margin-bottom: 0;
+   margin-bottom: 40px;
 }
 
 @media screen and (max-width: 320px) {
@@ -1088,7 +1089,7 @@ html, body{
    .portfolio-button{
       flex-wrap: wrap;
       justify-content: flex-start;
-      margin: 0 149px 48px 0;
+      margin: 0 90px 48px 0;
    }
 
    .button-list{
@@ -1403,23 +1404,44 @@ html, body{
 .team-rubric{
    margin-bottom: 35px;
 }
-   .team-members{
-      max-width: 240px;
-   }
-   .social-media-icons-list {
+.team-members{
+   max-width: 240px;
+}
+.social-media-icons-list {
    gap: 10px;   
+}
+.first-section-button{
+   padding: 13px 25px;
+}  
+.js-menu-container.is-open{
+   padding: 70px 30px 30px 30px;
+}
+.mobile-header-nav .header-list {
+   gap: 30px;
    }
-   .first-section-button{
-      padding: 13px 25px;
-   }  
-   /* portfolio */
-   .portfolio-button{
-      margin: 0 16px 48px 0;
-      gap: 16px;
+.mobile-header-nav .header-list-nav {
+      font-size: 25px;
    }
-   .button-list{
+.mobile-address-list {
+      font-size: 25px;
+   }
+.mobile-address{
+   margin-top: 200px;
+}
+.mobile-social-media-icons-list{
+   gap: 20px;
+   justify-content: space-evenly;
+}
+   
+
+
+/* portfolio */
+.portfolio-button{
+   margin: 0 16px 48px 0;
+   gap: 16px;
+}
+.button-list{
    padding: 6px 13px;
    font-size: 13px;
 }
-
 }
