@@ -121,7 +121,7 @@ body{
    background-color: var(--dark-color);
    width: 100%;
    max-width: 1440px;
-   padding: 188px 0;
+   padding: 112px 0;
    margin: 0 auto;
    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
    background-repeat: no-repeat;
@@ -223,6 +223,7 @@ body{
    gap: 24px;
    padding: 0;
    margin: 0;
+   justify-content: center;
 }
 
 .team-text-wrap{ 
@@ -314,6 +315,7 @@ body{
    gap: 24px;
    margin: auto;
    row-gap: 48px;
+   justify-content: center;
 }
 
 .portfolio-picture{ 
@@ -490,6 +492,8 @@ body{
    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 
 .icon-nav{
    fill: currentColor;
@@ -975,22 +979,6 @@ html, body{
    margin-bottom: 40px;
 }
 
-@media screen and (max-width: 320px) {
-   .input-footer-sub{
-      width: 300px;
-      height: 35px;
-   }
-   .container {
-      width: 100%;
-      max-width: 320px;
-   }
-   .section-rubric{
-      margin-bottom: 30px;
-   }
-   .customer-list{
-      row-gap: 16px;
-   }  
-}
 
 @media screen and (max-width: 400px) {
    .input-footer-sub{
@@ -1013,9 +1001,6 @@ html, body{
       width: 100%;
       max-width: 480px; 
    }
-   .first-section{
-      padding: 112px 0;
-   }
    .first-section-text{ 
       font-size: 36px;
       font-style: normal;
@@ -1035,32 +1020,11 @@ html, body{
    }
    .value-list-nav .names{
       font-size: 36px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 1.2;
-      letter-spacing: 0.02em;
-      color: var(--dark-color);
-      margin-bottom: 8px;
-   }
-   .text{
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 1.5em;
-      color: var(--text-color);
-      letter-spacing: 0.02em;
-   }
-   .team-list{
-      justify-content: center;
    }
    .customer-list{
-      flex-wrap: wrap;
       column-gap: 16px;
       row-gap: 72px;
       align-items: center;
-   }
-   .customer-list-nav{
-      flex-basis: calc((100% - 120px) / 2); 
    }
    .customer-icons{
       width: 190px;
@@ -1079,9 +1043,6 @@ html, body{
    }
    .button-list{
       padding: 8px 16px;
-   }
-   .portfolio-picture-list{
-      justify-content: center;
    }
    .portfolio-picture{
       width: 396px;
@@ -1103,9 +1064,6 @@ html, body{
    .header-flex{
       display: flex;
       height: 72px;
-   }
-   .first-section{
-      padding: 112px 0;
    }
 
    .address-main{
@@ -1150,15 +1108,12 @@ html, body{
    }
 
    .team-list{
-      justify-content: center;
       padding: 0 93px;
    }
 
    .customer-list{
-      flex-wrap: wrap;
       column-gap: 24px;
       row-gap: 72px;
-      justify-content: center;
    }
    .footer-div{
       margin: 0 120px 0 0;
@@ -1196,7 +1151,6 @@ html, body{
    }
    .portfolio-picture{ 
       width: 356px;
-      height: 420px;
       flex-basis: calc((100% - 24px) / 2); 
    }
 
@@ -1212,6 +1166,10 @@ html, body{
    .mobile-menu-layout{
       display: none;
    }
+   .first-section{
+      padding: 188px 0;
+   }
+
    .logo{
       margin-right: 76px;
    }
@@ -1255,14 +1213,9 @@ html, body{
     .section-three{
       display: block;
    }
-   .footer-div{
-      margin: 0 120px 0 0;
-      text-align: start;
-   }
    .subscribe-div-footer{
       margin: 0 0 0 80px;
    }
-
    .footer-form{
       display: flex;
       align-items: baseline;
@@ -1300,9 +1253,6 @@ html, body{
       flex-wrap: nowrap;
       flex-direction: row;
    }
-   .first-section {
-      padding: 188px 0;
-   }
 
    /* portfolio */
    .portfolio-button{   
@@ -1312,17 +1262,8 @@ html, body{
    .portfolio-section{
       padding: 96px 0 120px 0;
    }
-
-   .button-list{
-      padding: 12px 24px;
-   }
-
-   .portfolio-picture-list{
-      justify-content: center;
-   }
    .portfolio-picture{
       width: 360px;
-      height: 420px;
       flex-basis: auto;
    }
    .overlay img{
