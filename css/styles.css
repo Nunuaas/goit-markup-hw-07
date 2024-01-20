@@ -678,7 +678,6 @@ body{
    gap: 24px;
 }
 
-
 .label-font{ 
    font-size: 12px;
    font-style: normal;
@@ -869,7 +868,6 @@ height: 16px;
    letter-spacing: 0.04em;
 }
 
-
 .button-footer:hover,
 .button-footer:focus{
    background-color: var(--pressed-state-color);
@@ -934,7 +932,6 @@ html, body{
    z-index: 1;
 }
 
-
 .mobile-address{
       display: flex;
       font-style: normal;
@@ -992,8 +989,7 @@ html, body{
    }
    .customer-list{
       row-gap: 16px;
-   }
-   
+   }  
 }
 
 @media screen and (max-width: 400px) {
@@ -1010,7 +1006,6 @@ html, body{
    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office@2x.jpg);
   }
 }
-
 
 /* ================================================= MOBILE ========================================= */
 @media screen and (max-width: 767px) {
@@ -1033,13 +1028,11 @@ html, body{
    .section{
       padding: 96px 0;
    }
-
    .value-list{
       gap: 72px;
       flex-wrap: wrap;
       justify-content: center;
    }
-
    .value-list-nav .names{
       font-size: 36px;
       font-style: normal;
@@ -1049,7 +1042,6 @@ html, body{
       color: var(--dark-color);
       margin-bottom: 8px;
    }
-
    .text{
       font-size: 16px;
       font-style: normal;
@@ -1058,24 +1050,18 @@ html, body{
       color: var(--text-color);
       letter-spacing: 0.02em;
    }
-
    .team-list{
       justify-content: center;
    }
-   
    .customer-list{
       flex-wrap: wrap;
       column-gap: 16px;
       row-gap: 72px;
       align-items: center;
-  }
-   
-
+   }
    .customer-list-nav{
       flex-basis: calc((100% - 120px) / 2); 
    }
-
-
    .customer-icons{
       width: 190px;
       height: 88px;
@@ -1091,7 +1077,6 @@ html, body{
       justify-content: flex-start;
       margin: 0 90px 48px 0;
    }
-
    .button-list{
       padding: 8px 16px;
    }
@@ -1106,8 +1091,6 @@ html, body{
       width: 396px;
       height: 280px;
    }
-
-   
 }
 /* ================================================= TABLET ========================================= */
 @media screen and (min-width: 768px) {
@@ -1165,7 +1148,6 @@ html, body{
    .customer-list-nav{
       flex-basis: calc((100% - 120px) / 3);
    }
-
 
    .team-list{
       justify-content: center;
@@ -1348,9 +1330,6 @@ html, body{
       height: 300px;
    }
 
-
-
-
 }
 @media screen and (max-width: 320px) {
    .input-footer-sub{
@@ -1437,8 +1416,6 @@ html, body{
    justify-content: space-evenly;
 }
    
-
-
 /* portfolio */
 .portfolio-button{
    margin: 0 16px 48px 0;
