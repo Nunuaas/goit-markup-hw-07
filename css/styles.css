@@ -234,10 +234,10 @@ body{
    font-size: 20px;
    font-style: normal;
    font-weight: 500;
-   line-height: 1.2;
+   line-height: 1.2em;
    letter-spacing: 0.02em;
    color: var(--dark-color);
-   margin-bottom: 8px;
+   margin-bottom: 8px;  
 }
 
 
@@ -287,7 +287,7 @@ body{
    font-size: 16px;
    font-style: normal;
    font-weight: 500;
-   line-height: 1.5;
+   line-height: 1.5em;
    letter-spacing: 0.04em;
    color: var(--primary-brand-color);
    text-align: center;
@@ -1080,7 +1080,32 @@ html, body{
       height: 88px;
       padding: 16px 40px;
    }
-      
+
+   /* portfolio */
+   .portfolio-section{
+      padding: 48px 16px;
+   }
+   .portfolio-button{
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      margin: 0 149px 48px 0;
+   }
+
+   .button-list{
+      padding: 8px 16px;
+   }
+   .portfolio-picture-list{
+      justify-content: center;
+   }
+   .portfolio-picture{
+      width: 396px;
+      height: 400px;
+   }
+   .overlay img{
+      width: 396px;
+      height: 280px;
+   }
+
    
 }
 /* ================================================= TABLET ========================================= */
@@ -1173,6 +1198,23 @@ html, body{
    .input-footer-sub{
       width: 264px;
       height: 40px;
+   }
+
+   /* portfolio */
+   .portfolio-section{
+      padding: 64px 1px 96px 1px;
+   }
+   .portfolio-button{
+      margin: 0 0 64px 0;
+   }
+   .overlay img{ 
+      width: 356px;
+      height: 300px;
+   }
+   .portfolio-picture{ 
+      width: 356px;
+      height: 420px;
+      flex-basis: calc((100% - 24px) / 2); 
    }
 
 }
@@ -1275,6 +1317,35 @@ html, body{
       flex-wrap: nowrap;
       flex-direction: row;
    }
+   /* portfolio */
+   .portfolio-button{   
+      margin: 0 0 72px 0;
+   }
+
+   .portfolio-section{
+      padding: 96px 0 120px 0;
+   }
+
+   .button-list{
+      padding: 12px 24px;
+   }
+
+   .portfolio-picture-list{
+      justify-content: center;
+   }
+   .portfolio-picture{
+      width: 360px;
+      height: 420px;
+      flex-basis: auto;
+   }
+   .overlay img{
+      width: 360px;
+      height: 300px;
+   }
+
+
+
+
 }
 @media screen and (max-width: 320px) {
    .input-footer-sub{
@@ -1340,5 +1411,15 @@ html, body{
    }
    .first-section-button{
       padding: 13px 25px;
+   }  
+   /* portfolio */
+   .portfolio-button{
+      margin: 0 16px 48px 0;
+      gap: 16px;
    }
+   .button-list{
+   padding: 6px 13px;
+   font-size: 13px;
+}
+
 }

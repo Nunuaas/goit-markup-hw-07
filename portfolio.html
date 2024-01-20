@@ -28,6 +28,37 @@
             </ul>
         </address>
     </div>
+    <div class="mobile-menu-layout">
+        <a href="./index.html" class="logo link">Web<span class="logo-span">Studio</span></a>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+    </div>
+    <div class="js-menu-container">
+        <div class="mobile-menu-close ">
+                <button type="button" class="button-modal-box menu-toggle js-close-menu">
+                    <svg class="button-icon-close" width="8" height="8">
+                        <use href="./images/icons.svg#icon-button-close"></use>
+                    </svg>
+                </button>   
+        </div>
+        <nav class="mobile-header-nav">
+            <ul class="header-list list">
+            <li><a class="header-list-nav highlight link" href="./index.html">Studio</a></li>
+            <li><a class="header-list-nav link" href="./portfolio.html">Portfolio</a></li>
+            <li><a class="header-list-nav link" href="">Contacts</a></li>
+        </ul>
+    </nav>
+    <address class="mobile-address">
+        <ul class="address-main list">
+            <li><a class="mobile-address-list link" href="tel:+110001111111"> +11 (000) 111-11-11</a></li>
+            <li><a class="address-list link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+    </address>
     </header>
     <main>
         <section class="portfolio-section">
@@ -44,7 +75,7 @@
             <li class="portfolio-picture">
                 <a href="" class="link portfolio-link">
                     <div class="overlay"> 
-                <img src="./images/application.jpg" alt="banking app" width="360" height="300">
+                <img src="./images/application.jpg" srcset="./images/application@2x.jpg" alt="banking app" width="360" height="300">
                 <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
                 <div class="portfolio-text-wrap">
@@ -56,7 +87,7 @@
             <li class="portfolio-picture">
                 <a href="" class="link portfolio-link">
                     <div class="overlay">
-                <img src="./images/cashlesspayment.jpg" alt="Phone paying" width="360" height="300">
+                <img src="./images/cashlesspayment.jpg" srcset="./images/cashlesspayment@2x.jpg" alt="Phone paying" width="360" height="300">
                 <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
                 <div class="portfolio-text-wrap">
@@ -68,7 +99,7 @@
             <li class="portfolio-picture">
                 <a href="" class="link portfolio-link">
                     <div class="overlay">
-                <img src="./images/meditationapp.jpg" alt="Picture of macbook and iphone" width="360" height="300">
+                <img src="./images/meditationapp.jpg" srcset="./images/meditationapp@2x.jpg" alt="Picture of macbook and iphone" width="360" height="300">
                 <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
                 <div class="portfolio-text-wrap">
@@ -80,7 +111,7 @@
             <li class="portfolio-picture">
                 <a href="" class="link portfolio-link">
                     <div class="overlay">
-                <img src="./images/taxiservice.jpg" alt="Picture of a steering wheel and a phone in a car" width="360" height="300">
+                <img src="./images/taxiservice.jpg" srcset="./images/taxiservice@2x.jpg" alt="Picture of a steering wheel and a phone in a car" width="360" height="300">
                 <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
                 <div class="portfolio-text-wrap">
@@ -92,7 +123,7 @@
             <li class="portfolio-picture">
                 <a href="" class="link portfolio-link">
                     <div class="overlay">
-                <img src="./images/screenillustration.jpg" alt="Iphone and four difftent designs for screen background" width="360" height="300">
+                <img src="./images/screenillustration.jpg" srcset="./images/screenillustration@2x.jpg" alt="Iphone and four difftent designs for screen background" width="360" height="300">
                 <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
                 <div class="portfolio-text-wrap">
@@ -104,7 +135,7 @@
             <li class="portfolio-picture">
                 <a href="" class="link portfolio-link">
                     <div class="overlay">
-                <img src="./images/onlinecourses.jpg" alt="Woman with a Phone" width="360" height="300">
+                <img src="./images/onlinecourses.jpg" srcset="./images/onlinecourses@2x.jpg" alt="Woman with a Phone" width="360" height="300">
                 <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
                 <div class="portfolio-text-wrap">
@@ -116,7 +147,7 @@
             <li class="portfolio-picture">
                 <a href="" class="link portfolio-link">
                     <div class="overlay">
-                <img src="./images/instagramstories.jpg" alt="Design of instagramstory concpet" width="360" height="300">
+                <img src="./images/instagramstories.jpg" srcset="./images/instagramstories@2x.jpg" alt="Design of instagramstory concpet" width="360" height="300">
                 <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
                 <div class="portfolio-text-wrap">
@@ -128,7 +159,7 @@
             <li class="portfolio-picture">
                 <a href="" class="link portfolio-link">
                     <div class="overlay">
-                <img src="./images/organicfood.jpg" alt="Organic Food in a bag" width="360" height="300">
+                <img src="./images/organicfood.jpg" srcset="./images/organicfood@2x.jpg" alt="Organic Food in a bag" width="360" height="300">
                 <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
                 <div class="portfolio-text-wrap">
@@ -140,7 +171,7 @@
             <li class="portfolio-picture">
                 <a href="" class="link portfolio-link">
                     <div class="overlay">
-                <img src="./images/freshcoffee.jpg" alt="Fresh Coffee" width="360" height="300">
+                <img src="./images/freshcoffee.jpg" srcset="./images/freshcoffee@2x.jpg" alt="Fresh Coffee" width="360" height="300">
                 <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
             </div>
                 <div class="portfolio-text-wrap">
@@ -205,5 +236,7 @@
         </div>
 </div>
     </footer>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 </html>
